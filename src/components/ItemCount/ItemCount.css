@@ -1,4 +1,7 @@
+
+/*Estilo de contador azul */
 .counter {
+    font-size: 1em;
     width: fit-content;
     background-color: blue;
     margin: auto;
@@ -6,4 +9,13 @@
     text-align: center;
     border-radius: 10px;
     color: white;
+}
+
+.botonCarroAzul {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
 }

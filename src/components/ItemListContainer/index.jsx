@@ -6,7 +6,7 @@ import Title from "../Title";
 export const ItemListContainer = () => {
     return (
         <>
-        <Title />
+        <Title greeting='Bienvenidos a Dotor 3D' />
         <ItemCount />
         </>
     );

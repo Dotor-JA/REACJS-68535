@@ -4,7 +4,7 @@ import './Title.css';
 
 export const Title = (props) => {
     return (
-        <h1 className="title">¡Bienvenidos a Dotor 3D!</h1>
+        <h1 className="title">{props.greeting}</h1>
     );
 }
 

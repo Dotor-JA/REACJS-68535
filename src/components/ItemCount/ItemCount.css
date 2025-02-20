@@ -1,21 +1,19 @@
-
-/*Estilo de contador azul */
-.counter {
-    font-size: 1em;
-    width: fit-content;
-    background-color: blue;
-    margin: auto;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 10px;
-    color: white;
+.Controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
 }
 
-.botonCarroAzul {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 0.5rem;
-    margin: 0.5rem;
+.Counter {
+    text-align: center;
+}
+
+.Button {
     cursor: pointer;
+    background-color: #99b1e7;
+    color: #222;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 6px;
 }

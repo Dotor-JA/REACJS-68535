@@ -1,29 +1,25 @@
-import "./NavBar.css";
 import React from "react";
-import CartWidget from "../CartWidget";
+import { Link, NavLink } from "react-router-dom";
+import CardWidget from "../CartWidget";
 
 export const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">
-                    <CartWidget />  
-                </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse show" id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
-                        <a className="nav-link active" aria-current="page" href="#">Impresoras</a>
-                        <a className="nav-link active" aria-current="page" href="#">Filamentos</a>
-                        <a className="nav-link active" aria-current="page" href="#">
-                            <CartWidget />
-                        </a>
-                    </div>
+        <nav className="is-primary navbar">
+            <Link to="/" >
+                <p className="title navbar-brand">Dotor3D</p>
+            </Link>
+            <div className="navbar-menu">
+                <div className="navbar-start">
+                    <NavLink to={`/category/impresoras3D`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Impresoras 3D</NavLink>
+                    <NavLink to={`/category/filamento`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Filamento</NavLink>
+                    <NavLink to={`/category/resina`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Resina</NavLink>
+                    <NavLink to={`/category/accesorios`} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Accesorios</NavLink>
                 </div>
             </div>
+            <CardWidget />
         </nav>
-    );
+
+    )
 
 }
 
